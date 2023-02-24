@@ -5612,6 +5612,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-difference-between-and-this" class="md-nav__link">
+    The difference between `=` and `=this`
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5810,6 +5817,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-difference-between-and-this" class="md-nav__link">
+    The difference between `=` and `=this`
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5857,8 +5871,8 @@ Please mind: This only works as a dataviewjs block - or a javascript inline fiel
 <p><strong>As span inside the document</strong> (add <code>dataviewjs</code> to the block to see a result - the output is lengthy!)</p>
 <pre><code>dv.span(dv.page(&quot;2022-01-05&quot;))
 </code></pre>
-<h1 id="what-is-the-difference-between-and-this">What is the difference between <code>=[](#)</code> and <code>=this</code>?<a class="headerlink" href="#what-is-the-difference-between-and-this" title="Permanent link">&para;</a></h1>
-<p>In DQL inline code, <code>=[](#)</code> doesn't output anything, but <code>=[](#).file</code> or <code>=[](#).variable</code> does. It is because <code>=[](#)</code> is showing an empty link. If you index it (by using ".something") you get the current file as fail save. While <code>=this</code> is referring to the current page metadata like <code>$= dv.current()</code>. The reason why <code>=[](#).something</code> works is that you can do stuff like <code>=[[Peter]].lastname</code> inside another note. (comparable with <code>$=dv.page("Peter").lastname</code>)</p>
+<h2 id="the-difference-between-and-this">The difference between `=<a href="#"></a>` and `=this`<a class="headerlink" href="#the-difference-between-and-this" title="Permanent link">&para;</a></h2>
+<p>In DQL inline code, `=<a href="#"></a>` doesn't output anything, but `=<a href="#"></a>.file` or `=<a href="#"></a>.something` does. It is because `=<a href="#"></a>` is showing an empty link. If you index it (by using ".something") you get the current file, probably because the author just makes it refer to the current page like "this" instead of throwing an error. While `=this` is referring to the current page metadata like what `\$= dv.current()` does. The reason why `=<a href="#"></a>.something` works is that you can do stuff like `=[[Peter]].lastname` inside another note (comparable with `$=dv.page("Peter").lastname`).</p>
 
 
 
